@@ -11,8 +11,9 @@
 <body>
   <header>
     <h1>BEJAMAS</h1>
-    <div class="cart">🛒</div>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
   </header>
+
   <section class="hero">
     <img src="https://placehold.co/600x400" alt="Hero Product">
     <div class="hero-content">
@@ -20,49 +21,52 @@
         <h2>Samurai King Resting</h2>
         <p>About the photo: Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a premium photo from Bejamas.</p>
       </div>
-      <button class="btn">Add to Cart</button>
+      <button class="btn add-to-cart" data-name="Samurai King Resting" data-price="200">Add to Cart</button>
     </div>
   </section>
+
   <main class="layout">
     <aside>
       <h3>Category</h3>
       <ul>
-        <li><input type="checkbox"> People</li>
-        <li><input type="checkbox"> Premium</li>
-        <li><input type="checkbox"> Pets</li>
-        <li><input type="checkbox"> Food</li>
-        <li><input type="checkbox"> Landscape</li>
+        <li><input type="checkbox" class="filter" value="People"> People</li>
+        <li><input type="checkbox" class="filter" value="Premium"> Premium</li>
+        <li><input type="checkbox" class="filter" value="Pets"> Pets</li>
+        <li><input type="checkbox" class="filter" value="Food"> Food</li>
+        <li><input type="checkbox" class="filter" value="Landscape"> Landscape</li>
       </ul>
 
       <h3>Price</h3>
       <ul>
-        <li><input type="checkbox"> Lower than $20</li>
-        <li><input type="checkbox"> $20 - $100</li>
-        <li><input type="checkbox"> $100 - $200</li>
-        <li><input type="checkbox"> More than $200</li>
+        <li><input type="checkbox" class="price-filter" value="20"> Lower than $20</li>
+        <li><input type="checkbox" class="price-filter" value="100"> $20 - $100</li>
+        <li><input type="checkbox" class="price-filter" value="200"> $100 - $200</li>
+        <li><input type="checkbox" class="price-filter" value="201"> More than $200</li>
       </ul>
     </aside>
 
-    <section class="products">
-      <div class="card">
+    <section class="products" id="product-list">
+      <div class="card" data-category="People" data-price="19">
         <img src="https://placehold.co/300x200" alt="Red Bench">
         <h4>Red Bench</h4>
-        <p>$19.99</p>
-        <button class="btn">Add to Cart</button>
+        <p>$19</p>
+        <button class="btn add-to-cart" data-name="Red Bench" data-price="19">Add to Cart</button>
       </div>
-      <div class="card">
+      <div class="card" data-category="Premium" data-price="99">
         <img src="https://placehold.co/300x200" alt="Egg Balloon">
         <h4>Egg Balloon</h4>
-        <p>$99.99</p>
-        <button class="btn">Add to Cart</button>
+        <p>$99</p>
+        <button class="btn add-to-cart" data-name="Egg Balloon" data-price="99">Add to Cart</button>
       </div>
-      <div class="card">
+      <div class="card" data-category="Landscape" data-price="29">
         <img src="https://placehold.co/300x200" alt="Blue Sky">
         <h4>Blue Sky</h4>
-        <p>$29.99</p>
-        <button class="btn">Add to Cart</button>
+        <p>$29</p>
+        <button class="btn add-to-cart" data-name="Blue Sky" data-price="29">Add to Cart</button>
       </div>
     </section>
   </main>
+
+  <script src="app.js"></script>
 </body>
-</html>
+</html> 
