@@ -59,3 +59,60 @@
     .btn:hover {
       background: #333;
     }
+    .layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      gap: 32px;
+      padding: 32px;
+    }
+
+    aside {
+      border-right: 1px solid #eee;
+      padding-right: 20px;
+    }
+
+    aside h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    aside ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    aside li {
+      margin-bottom: 8px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card h4 {
+      margin: 12px 0 4px;
+      font-size: 16px;
+    }
+
+    .card p {
+      margin-bottom: 12px;
+      color: #666;
+    }
