@@ -13,3 +13,49 @@
       padding: 16px 32px;
       border-bottom: 1px solid #eee;
     }
+    header h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    header .cart {
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+      padding: 32px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hero-content h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .btn {
+      background: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+      transition: color 0.3s;
+    }
+    .btn:hover {
+      background: #333;
+    }
