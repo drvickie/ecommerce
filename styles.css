@@ -24,22 +24,20 @@
     }
     .hero {
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns:1fr;
       gap: 20px;
       padding: 32px;
       border-bottom: 1px solid #eee;
     }
 
-    .hero img {
-      width: 100%;
-      border-radius: 8px;
-    }
+    
 
     .hero-content {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: space-between;
     }
+
 
     .hero-content h2 {
       font-size: 24px;
@@ -56,8 +54,18 @@
       border-radius: 4px;
       transition: color 0.3s;
     }
+        .btn1{
+        font-size: 20px;
+        cursor: pointe
+
+    }
     .btn:hover {
       background: #333;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 8px;
     }
     .layout {
       display: grid;
@@ -87,7 +95,7 @@
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
       gap: 20px;
     }
 
