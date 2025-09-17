@@ -1,4 +1,5 @@
 // Simple Cart System
+
 let cartCount = 0;
 const cartCountEl = document.getElementById("cart-count");
 const cartButtons = document.querySelectorAll(".add-to-cart");
